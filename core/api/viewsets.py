@@ -23,7 +23,6 @@ class PontoTuristicoViewSet(ModelViewSet):
         queryset = ponto_turisticos.objects.all()
         id = self.request.query_params.get('id', None)
         Name  = self.request.query_params.get('Name', None)
-        Attrations = self.request.query_params.get('Attrations', None)
 
 
         if id:
